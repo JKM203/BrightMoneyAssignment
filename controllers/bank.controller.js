@@ -100,7 +100,7 @@ export const getloan = async (req, res, next) => {
     next(error);
   }
 };
-
+//loan disburse
 export const makePayment = async (req,res,next) => {
   const {loan_id , paid_amount} = req.body;
   if(!loan_id){
