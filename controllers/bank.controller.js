@@ -20,6 +20,7 @@ export const getloan = async (req, res, next) => {
     if (credit_score < 450) {
       return next(createError("Insufficient Credit_Score", 400));
     }
+    //checking the credit score
 
     if (income < 150000) {
       return next(createError("Insufficient Income", 400));
