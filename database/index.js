@@ -77,6 +77,7 @@ const db = {
       client.lastQuery = args;
       return query.apply(client, args);
     };
+    // client query 
 
     client.release = () => {
       clearTimeout(timeout);
