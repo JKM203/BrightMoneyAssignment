@@ -14,6 +14,7 @@ const pool = new Pool({
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
 });
+//host port database user password
 
 pool.on('connect', () => {
   console.log('Connected to the PostgreSQL database');
