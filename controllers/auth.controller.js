@@ -16,6 +16,7 @@ const register = async (req, res, next) => {
     if (emailCheck.rows.length > 0) {
       return next(createError('Email already in use', 400));
     }
+    //mail checking
 
     const aadharCheck = await db.query('SELECT * FROM users WHERE aadhar_id = $1', [aadhar_id]);
     if (aadharCheck.rows.length > 0) {
