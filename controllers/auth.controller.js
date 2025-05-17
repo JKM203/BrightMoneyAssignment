@@ -35,7 +35,7 @@ const register = async (req, res, next) => {
     } else {
       credit_score = 300 + Math.round(((income - 100000) / 15000) * 10);
     }
-
+    //billing data
     const now = new Date();
     const next_billing_date = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
 
