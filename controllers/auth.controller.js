@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import db from '../database/index.js';
 import { successResponse, createError } from '../utils/response.util.js';
 
-
+//registration
 const register = async (req, res, next) => {
   try {
     const { aadhar_id, name, email, annual_income, password } = req.body;
