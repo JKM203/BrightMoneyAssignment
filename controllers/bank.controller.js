@@ -39,6 +39,7 @@ export const getloan = async (req, res, next) => {
     let emi_amount = 0;
     for(let i = 0 ; i < term_period ; i++){
       let monthly_interest = ( principal_amount * interest_rate ) / 1200;
+      //calculating the monthly interest
       let montly_principale = (principal_amount * 0.03);
       let monthly_due = monthly_interest + montly_principale;
       if(i === 0){
